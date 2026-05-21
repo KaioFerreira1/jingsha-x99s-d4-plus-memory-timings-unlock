@@ -40,7 +40,9 @@ GUID: FE612B72-203C-47B1-8560-A66D946EB371
 | --- | --- |
 | <img src="../../screenshots/real-bios-memory-configuration.jpg" alt="Real BIOS Memory Configuration unlocked" width="420"> | <img src="../../screenshots/real-bios-memory-timings-menu.jpg" alt="Real BIOS Memory Timings menu" width="420"> |
 
-<img src="../../screenshots/cpu-z-ddr4-2400-cl13-and-bench-experimental.png" alt="CPU-Z DDR4-2400 CL13 experimental and bench" width="840">
+| CPU-Z DDR4-2400 CL13 experimental |
+| --- |
+| <img src="../../screenshots/cpu-z-ddr4-2400-cl13-and-bench-experimental.png" alt="CPU-Z DDR4-2400 CL13 experimental and bench" width="840"> |
 
 ## Related Files
 

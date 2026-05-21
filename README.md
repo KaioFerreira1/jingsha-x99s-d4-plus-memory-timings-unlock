@@ -199,7 +199,9 @@ The first AMIBCP image documents the original menu-placement issue. The followin
 | --- | --- |
 | <img src="screenshots/real-bios-memory-configuration.jpg" alt="Real BIOS Memory Configuration unlocked" width="420"> | <img src="screenshots/real-bios-memory-timings-menu.jpg" alt="Real BIOS Memory Timings menu" width="420"> |
 
-<img src="screenshots/cpu-z-ddr4-2400-cl13-and-bench-experimental.png" alt="CPU-Z DDR4-2400 CL13 experimental and bench" width="840">
+| CPU-Z DDR4-2400 CL13 experimental |
+| --- |
+| <img src="screenshots/cpu-z-ddr4-2400-cl13-and-bench-experimental.png" alt="CPU-Z DDR4-2400 CL13 experimental and bench" width="840"> |
 
 For adding board photos, CPU-Z timing screenshots, or stability proof, see [docs/IMAGE-GUIDELINES.md](docs/IMAGE-GUIDELINES.md) and [docs/VALIDATION.md](docs/VALIDATION.md).
 
