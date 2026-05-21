@@ -1,117 +1,44 @@
-﻿# JINGSHA X99S-D4-PLUS Memory Timings Unlock
+# JINGSHA X99S-D4-PLUS Memory Timings Unlock
 
-Unlocks the hidden **Memory Timings & Voltage Override** menu in the AMI Aptio BIOS used by the JINGSHA X99S-D4-PLUS motherboard.
+Research notes, release assets, and a reproducible patcher for unlocking the hidden **Memory Timings & Voltage Override** menu in the AMI Aptio BIOS used by the **JINGSHA X99S-D4-PLUS** motherboard.
 
-If you are new to this project, read [START-HERE.md](START-HERE.md) first.
+Start with [START-HERE.md](START-HERE.md) if you are new to this project.
 
-## Attention
+## What Was Unlocked
 
-This project is for the **JINGSHA X99S-D4-PLUS** BIOS variant tested here.
+The stock firmware already contains the menu:
 
-- Do not use this as a generic X99 BIOS mod.
-- Do not flash anything before validating the generated image in AMIBCP.
-- Do not publish or share full SPI dumps from your own board.
-- Keep a full SPI backup and have an external programmer available.
-- BIOS mod binaries, when provided, are experimental BIOS-region-only release assets.
+```text
+Memory Timings & Voltage Override
+```
 
-This project provides an experimental BIOS mod and documents a reproducible BIOS Setup patch for exposing:
+This project exposes it under:
 
 ```text
 IntelRCSetup > Memory Configuration > Memory Timings & Voltage Override
 ```
 
-The menu exists in the stock firmware, but it is not reachable from the visible BIOS Setup tree. The mod patches the Setup structure so the hidden form becomes accessible.
+## Tested Target
 
-## Status
+| Item | Tested value |
+| --- | --- |
+| Board | JINGSHA X99S-D4-PLUS |
+| Firmware/PCH reported by FPT | Intel Q87 Express / 8 Series-C220 |
+| BIOS UI | AMI Aptio Setup Utility 2023 |
+| Flash chip | Winbond W25Q128BV |
+| Full SPI size | 16 MB |
+| BIOS region size | 8 MB |
+| CPU | Intel Xeon E5-2680 v4 |
+| Memory | 2x8 GB SK hynix DDR4-2133 RDIMM |
+| Confirmed result | DDR4-2400 after unlock |
 
-Tested on one physical board:
+See [docs/FIRMWARE-IDENTIFICATION.md](docs/FIRMWARE-IDENTIFICATION.md) for the Q87 / 8 Series-C220 note.
 
-- Motherboard: JINGSHA X99S-D4-PLUS
-- Firmware/PCH reported by FPT: Intel Q87 Express / 8 Series-C220
-- BIOS UI: AMI Aptio Setup Utility 2023
-- CPU: Intel Xeon E5-2680 v4
-- Memory: 2x8 GB DDR4 Hynix 2133
-- Confirmed result: DDR4 running at 2400 MT/s after unlock
+## Downloads
 
-This is not a universal BIOS image. The release BIOS region and the patcher target only the known tested build.
+Firmware binaries are not committed to Git. If published, they are attached manually to GitHub Releases.
 
-## Features
-
-- Unlocks the hidden memory timings menu.
-- Provides an experimental BIOS-region-only mod through GitHub Releases.
-- Keeps the process reproducible from the user's own dump.
-- Validates exact module sizes and SHA256 hashes before patching.
-- Documents GUIDs, offsets, QuestionIds, and output hashes.
-- Includes real BIOS Setup evidence from the tested board.
-
-This project does not update microcodes, Intel ME, ReBar, GOP, VROC, logos, or other firmware components.
-
-## Compatibility
-
-| Board | Status | Notes |
-| --- | --- | --- |
-| JINGSHA X99S-D4-PLUS | Tested working | Menu unlocked and DDR4-2400 confirmed |
-| Other JINGSHA X99 variants | Untested | Do not assume compatible |
-| MACHINIST/KLLISRE/HUANANZHI X99 variants | Untested | Similar methods may apply, but offsets can differ |
-
-See [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md).
-
-## What This Repository Includes
-
-- Documentation of the method and patch targets.
-- Release notes and hashes for the experimental BIOS region mod.
-- Release notes and hashes for a stock tested BIOS-region-only reference.
-- A readable JSON patch profile for the tested `Platform` and `AMITSESetupData` module bodies.
-- A small PowerShell wrapper plus a generic patch executor.
-- Patch notes with offsets, GUIDs, hashes, and validation details.
-- Screenshots showing the unlocked menu on real hardware.
-
-## What This Repository Does Not Include
-
-- No full SPI dumps.
-- No firmware binaries committed into the Git tree.
-- No AMIBCP binaries.
-- No Intel FPT / Intel ME System Tools binaries.
-- No UEFITool binaries.
-- No automated flashing script.
-
-BIOS mod binaries, if published, belong in GitHub Releases as explicit experimental assets. You still need your own backup and legally obtained tools.
-
-## Repository Layout
-
-```text
-boards/          Board-specific profile and validation summary
-docs/            Method, compatibility, safety, tools, validation
-patches/         Human-readable JSON patch profile
-patch-notes/     Exact offsets, GUIDs, hashes, and byte changes
-scripts/         Fail-closed patcher
-screenshots/     Real BIOS Setup evidence
-release-assets/  Release notes, hashes, and upload checklist
-```
-
-## Stock BIOS Reference
-
-This project can also provide a stock tested BIOS-region-only reference for users who cannot find the original firmware online.
-
-Expected stock release asset:
-
-```text
-JINGSHA-X99S-D4-PLUS_Q87-C220_STOCK-TESTED_BIOS-REGION-ONLY.bin
-```
-
-SHA256:
-
-```text
-10E8AE30C7330AD3D3C853E4B72BAC8EC1644A255B20A35D39C4825DC871CE04
-```
-
-Read [docs/STOCK-BIOS.md](docs/STOCK-BIOS.md) before publishing or using the stock reference.
-
-## Downloading The BIOS Mod
-
-The experimental BIOS mod should be published as a GitHub Release asset, not committed directly to the repository.
-
-Expected release asset:
+### Experimental Unlocked BIOS Region
 
 ```text
 JINGSHA-X99S-D4-PLUS_Q87-C220_MEMORY-TIMINGS-UNLOCK_v0.1.0-experimental_BIOS-REGION-ONLY.bin
@@ -123,40 +50,78 @@ SHA256:
 E886AC2F4EE250B2DFDC103948C819D74125B16910E6EBEDDBC4F4CEE9FAF901
 ```
 
-Release notes are in:
+Release notes:
 
 ```text
 release-assets/v0.1.0-experimental/RELEASE-NOTES.md
 ```
 
-Read [docs/BIOS-MOD-RELEASE.md](docs/BIOS-MOD-RELEASE.md) before publishing or flashing a release binary.
+### Stock Tested BIOS Region
+
+```text
+JINGSHA-X99S-D4-PLUS_Q87-C220_STOCK-TESTED_BIOS-REGION-ONLY.bin
+```
+
+SHA256:
+
+```text
+10E8AE30C7330AD3D3C853E4B72BAC8EC1644A255B20A35D39C4825DC871CE04
+```
+
+Release notes:
+
+```text
+release-assets/stock-tested-bios-region/RELEASE-NOTES.md
+```
+
+## Safety Notice
+
+BIOS modification can brick your motherboard.
+
+I am not responsible for bricked motherboards, data loss, corrupted firmware, unstable memory settings, or any damage caused by using this project.
+
+Use at your own risk.
+
+Before flashing anything:
+
+- keep your own full SPI backup
+- validate the image in AMIBCP
+- confirm your board and firmware identification
+- verify SHA256 checksums
+- have an external SPI programmer available
+
+Read [DISCLAIMER.md](DISCLAIMER.md) and [docs/FLASHING-SAFETY.md](docs/FLASHING-SAFETY.md).
+
+## Compatibility Rule
+
+Do not assume compatibility from the "X99" name alone.
+
+The safest compatibility check is the extracted module hash:
+
+```text
+Platform PE32 body:
+05559A64A4E5BB125C9740AB7C6B49A665201F35CEEA08CC07F62C8EBB69E88B
+
+AMITSESetupData body:
+E687C9E53CED3779D99BA69B15456AAEC012DB67F1BB470D094796E962284C76
+```
+
+If these hashes differ, treat your BIOS as a different target until manually reviewed.
+
+See [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md).
 
 ## Reproducible Patch Method
 
-1. Dump your own BIOS.
-2. Open the dump in AMIBCP and confirm the hidden menu exists.
-3. Extract these module bodies:
-   - `Platform` PE32 body
-   - `AMITSESetupData` freeform subtype GUID body
-4. Run the patcher on those two extracted bodies.
-5. Replace the patched bodies back into a copy of your BIOS image.
-6. Validate the modified image in AMIBCP before considering any flash.
+The release binary is not the only way to use the project. You can reproduce the mod from your own extracted module bodies.
 
-See [docs/METHOD.md](docs/METHOD.md) for the full workflow.
-See [docs/DUMPING.md](docs/DUMPING.md) for backup and privacy notes.
-See [docs/FIRMWARE-IDENTIFICATION.md](docs/FIRMWARE-IDENTIFICATION.md) for the Q87 / 8 Series-C220 detection note.
-See [docs/GLOSSARY.md](docs/GLOSSARY.md) if the firmware terms are unfamiliar.
-
-## Patcher Quick Start
-
-Create a working folder and place the extracted bodies there:
+Required extracted files:
 
 ```text
-work/pl.bin
-work/fe.bin
+work/pl.bin   -> Platform PE32 body
+work/fe.bin   -> AMITSESetupData freeform body
 ```
 
-Run the patcher:
+Run:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\Patch-JINGSHA-X99S-D4-PLUS-MemoryTimings.ps1 `
@@ -173,49 +138,50 @@ work/patched/fe_memorytimings_mod.bin
 work/patched/patch_report.txt
 ```
 
-The script refuses to patch if the input modules do not match the tested build.
-
-The actual patch data is in:
+The patch data is intentionally stored in readable JSON:
 
 ```text
 patches/JINGSHA-X99S-D4-PLUS-memory-timings.json
 ```
 
-Read that file if you want to audit the offsets and replacement bytes without reading PowerShell code.
+See [docs/METHOD.md](docs/METHOD.md) for extraction and rebuild steps.
 
-## Rebuilding The BIOS Image
+## Validation Evidence
 
-Using LongSoft `UEFIReplace` 0.28.0:
+Validated on real hardware:
 
-```powershell
-UEFIReplace.exe .\bios_region_dump.bin ABBCE13D-E25A-4D9F-A1F9-2F7710786892 10 .\work\patched\pl_memorytimings_mod.bin -o .\work\bios_step1_platform.bin
+- AMIBCP showed the unlocked menu under `IntelRCSetup > Memory Configuration`
+- real BIOS Setup opened the menu
+- Windows booted successfully
+- CPU-Z confirmed DDR4-2400
 
-UEFIReplace.exe .\work\bios_step1_platform.bin FE612B72-203C-47B1-8560-A66D946EB371 18 .\work\patched\fe_memorytimings_mod.bin -o .\work\bios_region_memory_timings_unlocked.bin
-```
-
-Then open `bios_region_memory_timings_unlocked.bin` in AMIBCP and verify the menu appears under:
-
-```text
-IntelRCSetup > Memory Configuration
-```
-
-## Safety
-
-Firmware modification can brick your motherboard. Do not flash anything unless you understand recovery procedures and have a full SPI backup. An external programmer is strongly recommended.
-
-Read [DISCLAIMER.md](DISCLAIMER.md) and [docs/FLASHING-SAFETY.md](docs/FLASHING-SAFETY.md) before using this project.
-Read [docs/KNOWN-ISSUES.md](docs/KNOWN-ISSUES.md) before changing memory settings.
-
-## Evidence
-
-The tested board successfully exposed the menu in the real BIOS Setup and booted DDR4 at 2400 MT/s.
-
-Screenshots are in [screenshots](screenshots).
-
-Included evidence:
+Screenshots:
 
 - [real-bios-memory-configuration.jpg](screenshots/real-bios-memory-configuration.jpg)
 - [real-bios-memory-timings-menu.jpg](screenshots/real-bios-memory-timings-menu.jpg)
+
+## Repository Layout
+
+```text
+boards/          Board-specific profile and validation summary
+docs/            Method, compatibility, safety, tools, validation
+patches/         Human-readable JSON patch profile
+patch-notes/     Exact offsets, GUIDs, hashes, and byte changes
+scripts/         Fail-closed patcher
+screenshots/     Real BIOS Setup evidence
+release-assets/  Release notes and SHA256 files for GitHub Releases
+```
+
+## Not Included
+
+This repository does not include:
+
+- full SPI dumps
+- firmware binaries committed into Git
+- AMIBCP binaries
+- Intel FPT / Intel ME System Tools binaries
+- UEFITool binaries
+- automated flashing scripts
 
 ## Credits
 
