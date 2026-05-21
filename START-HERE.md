@@ -52,6 +52,8 @@ Do not use this if:
 
 ## Option A: Use The Experimental Release
 
+This is the simple path. You do not need to run the scripts if you are using the published BIOS-region-only file.
+
 ```text
 1. Download the BIOS-region-only file from GitHub Releases
 2. Verify its SHA256 hash

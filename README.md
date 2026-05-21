@@ -38,6 +38,8 @@ See [docs/FIRMWARE-IDENTIFICATION.md](docs/FIRMWARE-IDENTIFICATION.md) for the Q
 
 Firmware binaries are not committed to Git. If published, they are attached manually to GitHub Releases.
 
+If you only want to inspect or use the published BIOS-region image, the scripts are not required. They are kept so the project is auditable: reviewers can see the exact bytes changed, verify the source module hashes, and reproduce the same mod from a matching stock dump instead of blindly trusting a binary file.
+
 ### Experimental Unlocked BIOS Region
 
 ```text
@@ -110,9 +112,9 @@ If these hashes differ, treat your BIOS as a different target until manually rev
 
 See [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md).
 
-## Reproducible Patch Method
+## Optional Reproducible Patch Method
 
-The release binary is not the only way to use the project. You can reproduce the mod from your own extracted module bodies.
+The release binary is the simple path. The patcher is the verification/research path: it rebuilds the modified module bodies from the documented JSON patch profile and refuses to run if the input hashes or expected bytes do not match.
 
 Required extracted files:
 
