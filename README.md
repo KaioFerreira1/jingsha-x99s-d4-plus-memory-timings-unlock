@@ -18,6 +18,22 @@ This project exposes it under:
 IntelRCSetup > Memory Configuration > Memory Timings & Voltage Override
 ```
 
+## Also Known As
+
+This board and mod may be searched under slightly different names:
+
+```text
+JINGSHA X99S-D4-PLUS
+JINGSHA X99S D4 PLUS
+JINGSHA X99S-D4 PLUS
+X99S D4 PLUS
+X99S-D4 PLUS
+IntelRCSetup memory timings unlock
+AMI Aptio memory timings unlock
+Q87 / 8 Series-C220 X99 motherboard
+BIOS-region-only memory timings mod
+```
+
 ## Tested Target
 
 | Item | Tested value |
