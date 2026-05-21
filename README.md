@@ -2,6 +2,8 @@
 
 Unlocks the hidden **Memory Timings & Voltage Override** menu in the AMI Aptio BIOS used by the JINGSHA X99S-D4-PLUS motherboard.
 
+If you are new to this project, read [START-HERE.md](START-HERE.md) first.
+
 ## Attention
 
 This project is for the **JINGSHA X99S-D4-PLUS** BIOS variant tested here.
@@ -95,6 +97,7 @@ screenshots/     Real BIOS Setup evidence
 
 See [docs/METHOD.md](docs/METHOD.md) for the full workflow.
 See [docs/DUMPING.md](docs/DUMPING.md) for backup and privacy notes.
+See [docs/GLOSSARY.md](docs/GLOSSARY.md) if the firmware terms are unfamiliar.
 
 ## Quick Start
 
