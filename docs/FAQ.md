@@ -30,6 +30,14 @@ Not automatically.
 
 The patch is only tested on JINGSHA X99S-D4-PLUS. Other X99 boards may have similar menus, but offsets and QuestionIds can differ.
 
+## Can I adapt the script for another board?
+
+Yes, but only the generic patch engine should be reused directly.
+
+Create a new JSON profile with that board's own hashes, offsets, validation bytes, and replacement bytes. Do not use the JINGSHA X99S-D4-PLUS profile on another board.
+
+See [PORTING-GUIDE.md](PORTING-GUIDE.md).
+
 ## The patcher says my hash does not match. What now?
 
 Stop.

@@ -75,6 +75,14 @@ Expected SHA256:
 E886AC2F4EE250B2DFDC103948C819D74125B16910E6EBEDDBC4F4CEE9FAF901
 ```
 
+## Option B: Reproduce The Patch With The Script
+
+Use this path if you want to understand or audit the modification instead of only using the release asset.
+
+Start with [docs/SCRIPT-WALKTHROUGH.md](docs/SCRIPT-WALKTHROUGH.md), then use [docs/METHOD.md](docs/METHOD.md) for extraction and BIOS-region rebuild details.
+
+For another motherboard, do not reuse this board's offsets directly. Use [docs/PORTING-GUIDE.md](docs/PORTING-GUIDE.md).
+
 ## Optional: Stock BIOS Reference
 
 If you need the tested stock BIOS-region-only reference, check:
@@ -96,7 +104,7 @@ Expected SHA256:
 10E8AE30C7330AD3D3C853E4B72BAC8EC1644A255B20A35D39C4825DC871CE04
 ```
 
-## Option B: Rebuild The Mod Yourself
+## Rebuild Summary For Option B
 
 ```text
 1. Dump your own BIOS
@@ -118,9 +126,7 @@ AMITSESetupData body      -> fe.bin
 
 If you do not know how to extract these files, read:
 
-```text
-docs/METHOD.md
-```
+[docs/SCRIPT-WALKTHROUGH.md](docs/SCRIPT-WALKTHROUGH.md) and [docs/METHOD.md](docs/METHOD.md).
 
 ## Run The Patcher
 
@@ -172,12 +178,14 @@ tCWL
 ```text
 1. README.md
 2. START-HERE.md
-3. docs/COMPATIBILITY.md
+3. docs/SCRIPT-WALKTHROUGH.md
 4. docs/METHOD.md
-5. docs/FIRMWARE-IDENTIFICATION.md
-6. docs/BIOS-MOD-RELEASE.md
-7. docs/STOCK-BIOS.md
-8. patches/JINGSHA-X99S-D4-PLUS-memory-timings.json
-9. docs/FLASHING-SAFETY.md
-10. docs/FAQ.md
+5. docs/COMPATIBILITY.md
+6. docs/FIRMWARE-IDENTIFICATION.md
+7. docs/BIOS-MOD-RELEASE.md
+8. docs/STOCK-BIOS.md
+9. patches/JINGSHA-X99S-D4-PLUS-memory-timings.json
+10. docs/FLASHING-SAFETY.md
+11. docs/FAQ.md
+12. docs/PORTING-GUIDE.md
 ```

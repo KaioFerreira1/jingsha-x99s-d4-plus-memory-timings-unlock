@@ -146,7 +146,9 @@ The patch data is intentionally stored in readable JSON:
 patches/JINGSHA-X99S-D4-PLUS-memory-timings.json
 ```
 
-See [docs/METHOD.md](docs/METHOD.md) for extraction and rebuild steps.
+See [docs/SCRIPT-WALKTHROUGH.md](docs/SCRIPT-WALKTHROUGH.md) for a step-by-step explanation of the script and [docs/METHOD.md](docs/METHOD.md) for extraction and rebuild details.
+
+If you want to adapt the method for another motherboard, read [docs/PORTING-GUIDE.md](docs/PORTING-GUIDE.md). The script engine can be reused, but the JSON profile, offsets, hashes, and validation data must be recalculated from that board's firmware.
 
 ## Validation Evidence
 

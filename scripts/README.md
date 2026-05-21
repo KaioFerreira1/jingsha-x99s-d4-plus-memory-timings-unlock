@@ -37,6 +37,8 @@ powershell -ExecutionPolicy Bypass -File .\scripts\Patch-JINGSHA-X99S-D4-PLUS-Me
   -OutputDirectory .\work\patched
 ```
 
+Detailed walkthrough: [../docs/SCRIPT-WALKTHROUGH.md](../docs/SCRIPT-WALKTHROUGH.md)
+
 ## Review The Patch
 
 Review the JSON profile first. It is easier to audit than the script:
@@ -52,3 +54,5 @@ The profile contains:
 - write offsets
 - replacement bytes
 - labels explaining each change
+
+For adapting this method to another board, see [../docs/PORTING-GUIDE.md](../docs/PORTING-GUIDE.md).
