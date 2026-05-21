@@ -25,6 +25,8 @@ DDR4-2400 confirmed in CPU-Z
 ```text
 release-assets/v0.1.0-experimental/RELEASE-NOTES.md
 release-assets/v0.1.0-experimental/SHA256SUMS.txt
+release-assets/stock-tested-bios-region/RELEASE-NOTES.md
+release-assets/stock-tested-bios-region/SHA256SUMS.txt
 scripts/Patch-JINGSHA-X99S-D4-PLUS-MemoryTimings.ps1
 patches/JINGSHA-X99S-D4-PLUS-memory-timings.json
 patch-notes/JINGSHA-X99S-D4-PLUS-2026-05-21.md
@@ -43,6 +45,18 @@ SHA256:
 
 ```text
 E886AC2F4EE250B2DFDC103948C819D74125B16910E6EBEDDBC4F4CEE9FAF901
+```
+
+Stock tested BIOS region reference:
+
+```text
+JINGSHA-X99S-D4-PLUS_Q87-C220_STOCK-TESTED_BIOS-REGION-ONLY.bin
+```
+
+SHA256:
+
+```text
+10E8AE30C7330AD3D3C853E4B72BAC8EC1644A255B20A35D39C4825DC871CE04
 ```
 
 ## Release Policy

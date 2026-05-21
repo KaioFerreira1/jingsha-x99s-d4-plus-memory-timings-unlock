@@ -73,6 +73,27 @@ Expected SHA256:
 E886AC2F4EE250B2DFDC103948C819D74125B16910E6EBEDDBC4F4CEE9FAF901
 ```
 
+## Optional: Stock BIOS Reference
+
+If you need the tested stock BIOS-region-only reference, check:
+
+```text
+release-assets/stock-tested-bios-region/RELEASE-NOTES.md
+docs/STOCK-BIOS.md
+```
+
+Expected stock asset:
+
+```text
+JINGSHA-X99S-D4-PLUS_Q87-C220_STOCK-TESTED_BIOS-REGION-ONLY.bin
+```
+
+Expected SHA256:
+
+```text
+10E8AE30C7330AD3D3C853E4B72BAC8EC1644A255B20A35D39C4825DC871CE04
+```
+
 ## Option B: Rebuild The Mod Yourself
 
 ```text
@@ -153,7 +174,8 @@ tCWL
 4. docs/METHOD.md
 5. docs/FIRMWARE-IDENTIFICATION.md
 6. docs/BIOS-MOD-RELEASE.md
-7. patches/JINGSHA-X99S-D4-PLUS-memory-timings.json
-8. docs/FLASHING-SAFETY.md
-9. docs/FAQ.md
+7. docs/STOCK-BIOS.md
+8. patches/JINGSHA-X99S-D4-PLUS-memory-timings.json
+9. docs/FLASHING-SAFETY.md
+10. docs/FAQ.md
 ```

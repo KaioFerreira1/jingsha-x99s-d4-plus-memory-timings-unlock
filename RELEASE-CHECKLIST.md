@@ -17,3 +17,4 @@ Use this checklist before publishing or tagging a release.
 - [ ] Release filename includes `BIOS-REGION-ONLY`.
 - [ ] Compatibility notes mention exact module hashes.
 - [ ] Release notes include SHA256 for every binary asset.
+- [ ] Stock BIOS reference, if released, is BIOS-region-only and not full SPI.

@@ -60,6 +60,7 @@ See [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md).
 
 - Documentation of the method and patch targets.
 - Release notes and hashes for the experimental BIOS region mod.
+- Release notes and hashes for a stock tested BIOS-region-only reference.
 - A readable JSON patch profile for the tested `Platform` and `AMITSESetupData` module bodies.
 - A small PowerShell wrapper plus a generic patch executor.
 - Patch notes with offsets, GUIDs, hashes, and validation details.
@@ -87,6 +88,24 @@ scripts/         Fail-closed patcher
 screenshots/     Real BIOS Setup evidence
 release-assets/  Release notes, hashes, and upload checklist
 ```
+
+## Stock BIOS Reference
+
+This project can also provide a stock tested BIOS-region-only reference for users who cannot find the original firmware online.
+
+Expected stock release asset:
+
+```text
+JINGSHA-X99S-D4-PLUS_Q87-C220_STOCK-TESTED_BIOS-REGION-ONLY.bin
+```
+
+SHA256:
+
+```text
+10E8AE30C7330AD3D3C853E4B72BAC8EC1644A255B20A35D39C4825DC871CE04
+```
+
+Read [docs/STOCK-BIOS.md](docs/STOCK-BIOS.md) before publishing or using the stock reference.
 
 ## Downloading The BIOS Mod
 

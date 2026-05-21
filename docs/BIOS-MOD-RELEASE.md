@@ -1,17 +1,23 @@
 # BIOS Mod Release Policy
 
-This repository is now structured around two use cases:
+This repository is now structured around three use cases:
 
 ```text
 1. Download the experimental BIOS region mod from GitHub Releases.
-2. Rebuild the same mod from your own dump using the patcher.
+2. Download the stock tested BIOS region reference from GitHub Releases.
+3. Rebuild the same mod from your own dump using the patcher.
 ```
 
 The patcher remains the recommended path for verification and future BIOS variants.
 
 ## What Can Be Published In Releases
 
-GitHub Releases may include an experimental **BIOS region only** image for the exact tested target:
+GitHub Releases may include BIOS-region-only images for the exact tested target:
+
+- experimental memory timings unlock BIOS region
+- stock tested BIOS region reference
+
+Target:
 
 ```text
 JINGSHA X99S-D4-PLUS
@@ -25,6 +31,7 @@ Release filename format:
 
 ```text
 JINGSHA-X99S-D4-PLUS_Q87-C220_MEMORY-TIMINGS-UNLOCK_vX.Y.Z-experimental_BIOS-REGION-ONLY.bin
+JINGSHA-X99S-D4-PLUS_Q87-C220_STOCK-TESTED_BIOS-REGION-ONLY.bin
 ```
 
 ## What Must Not Be Published
@@ -83,4 +90,3 @@ The full SPI image can contain board-specific or sensitive data:
 - MAC-related data, depending on platform
 
 Publishing only the BIOS region reduces, but does not eliminate, risk.
-
