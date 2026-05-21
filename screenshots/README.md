@@ -7,6 +7,24 @@ See [../docs/IMAGE-GUIDELINES.md](../docs/IMAGE-GUIDELINES.md) before adding mor
 ## Files
 
 ```text
+amibcp-intelrcsetup-memory-timings-visible.jpg
+```
+
+Shows AMIBCP with `IntelRCSetup`, `Memory Configuration`, and the unlocked `Memory Timings & Voltage Override` entry visible in the Setup tree.
+
+```text
+amibcp-memory-configuration-tree.png
+```
+
+Shows the AMIBCP tree under `IntelRCSetup > Memory Configuration`.
+
+```text
+amibcp-memory-timings-visible-yes.png
+```
+
+Shows AMIBCP listing `Memory Timings & Voltage Override` with `Show = Yes`.
+
+```text
 real-bios-memory-configuration.jpg
 ```
 
@@ -22,21 +40,17 @@ real-bios-memory-timings-menu.jpg
 
 Shows the opened `Memory Timings & Voltage Override` submenu with `DIMM profile`, `Memory Frequency`, voltage, and timing controls.
 
-Suggested additional evidence file:
-
 ```text
-cpu-z-mainboard-q87-bios-5.11.jpg
+cpu-z-mainboard-q87-bios-5-11.png
 ```
 
 Shows CPU-Z `Mainboard` tab with JINGSHA X99S D4 PLUS, Intel Q87 southbridge, AMI BIOS 5.11, and BIOS date `09/06/2023`.
 
-Suggested timing evidence file:
-
 ```text
-cpu-z-ddr4-2400-cl13-experimental.jpg
+cpu-z-ddr4-2400-cl13-and-bench-experimental.png
 ```
 
-Shows CPU-Z `Memory` tab after applying DDR4-2400 experimental timings.
+Shows CPU-Z `Memory` tab after applying DDR4-2400 experimental timings, plus CPU-Z benchmark output for the tested Xeon E5-2680 v4.
 
 ## Note
 

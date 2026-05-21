@@ -53,8 +53,10 @@ If showing the memory module itself, prefer `CPU-Z > SPD` only if serial numbers
 Use descriptive lowercase names:
 
 ```text
-screenshots/cpu-z-ddr4-2400-cl17.jpg
-screenshots/cpu-z-ddr4-2400-cl13-experimental.jpg
+screenshots/amibcp-intelrcsetup-memory-timings-visible.jpg
+screenshots/amibcp-memory-timings-visible-yes.png
+screenshots/cpu-z-mainboard-q87-bios-5-11.png
+screenshots/cpu-z-ddr4-2400-cl13-and-bench-experimental.png
 screenshots/memtest-ddr4-2400-cl13.jpg
 screenshots/real-board-jingsha-x99s-d4-plus.jpg
 ```
