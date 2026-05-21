@@ -4,6 +4,7 @@ Current documented patch:
 
 ```text
 Target:  JINGSHA X99S-D4-PLUS
+FPT:     Intel Q87 Express / 8 Series-C220
 Date:    2026-05-21
 Version: 0.1.0
 Status:  Tested on real hardware

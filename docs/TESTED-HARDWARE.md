@@ -7,6 +7,20 @@ JINGSHA X99S-D4-PLUS
 AMI Aptio Setup Utility
 ```
 
+## Firmware/PCH Identification
+
+Intel FPT reported the tested dump as:
+
+```text
+Intel Q87 Express / 8 Series-C220
+```
+
+See:
+
+```text
+docs/FIRMWARE-IDENTIFICATION.md
+```
+
 ## CPU
 
 ```text
@@ -40,4 +54,3 @@ The tested BIOS region contained:
 Platform GUID:        ABBCE13D-E25A-4D9F-A1F9-2F7710786892
 AMITSESetupData GUID: FE612B72-203C-47B1-8560-A66D946EB371
 ```
-

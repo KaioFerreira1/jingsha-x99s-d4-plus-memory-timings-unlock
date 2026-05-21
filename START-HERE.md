@@ -39,6 +39,7 @@ Use this if:
 
 - You have a JINGSHA X99S-D4-PLUS.
 - Your extracted module hashes match this project.
+- Your firmware identification is consistent with the tested dump, or you understand how to review differences.
 - You know how to recover a bad BIOS flash.
 - You understand that firmware flashing can brick the board.
 
@@ -128,8 +129,8 @@ tCWL
 2. START-HERE.md
 3. docs/COMPATIBILITY.md
 4. docs/METHOD.md
-5. patches/JINGSHA-X99S-D4-PLUS-memory-timings.json
-6. docs/FLASHING-SAFETY.md
-7. docs/FAQ.md
+5. docs/FIRMWARE-IDENTIFICATION.md
+6. patches/JINGSHA-X99S-D4-PLUS-memory-timings.json
+7. docs/FLASHING-SAFETY.md
+8. docs/FAQ.md
 ```
-

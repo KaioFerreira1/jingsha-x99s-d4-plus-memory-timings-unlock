@@ -7,6 +7,7 @@ This repository currently targets one tested board and one known firmware build.
 | Item | Value |
 | --- | --- |
 | Board | JINGSHA X99S-D4-PLUS |
+| Firmware/PCH reported by FPT | Intel Q87 Express / 8 Series-C220 |
 | BIOS UI | AMI Aptio Setup Utility 2023 |
 | CPU | Intel Xeon E5-2680 v4 |
 | Memory | 2x8 GB DDR4 Hynix 2133 |
@@ -42,3 +43,4 @@ Similar methods may work on related AMI Aptio X99 firmware, but the offsets and 
 
 Treat every BIOS dump as a separate target unless the extracted module hashes match exactly.
 
+Also check [FIRMWARE-IDENTIFICATION.md](FIRMWARE-IDENTIFICATION.md). A board can be marketed as "X99" while firmware tools report a different Intel PCH family.

@@ -27,6 +27,7 @@ The menu exists in the stock firmware, but it is not reachable from the visible 
 Tested on one physical board:
 
 - Motherboard: JINGSHA X99S-D4-PLUS
+- Firmware/PCH reported by FPT: Intel Q87 Express / 8 Series-C220
 - BIOS UI: AMI Aptio Setup Utility 2023
 - CPU: Intel Xeon E5-2680 v4
 - Memory: 2x8 GB DDR4 Hynix 2133
@@ -97,6 +98,7 @@ screenshots/     Real BIOS Setup evidence
 
 See [docs/METHOD.md](docs/METHOD.md) for the full workflow.
 See [docs/DUMPING.md](docs/DUMPING.md) for backup and privacy notes.
+See [docs/FIRMWARE-IDENTIFICATION.md](docs/FIRMWARE-IDENTIFICATION.md) for the Q87 / 8 Series-C220 detection note.
 See [docs/GLOSSARY.md](docs/GLOSSARY.md) if the firmware terms are unfamiliar.
 
 ## Quick Start
