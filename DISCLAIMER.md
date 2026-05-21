@@ -18,6 +18,8 @@ The Git tree does not contain firmware images.
 
 GitHub Releases provide experimental BIOS-region-only images for the exact tested target. They are not full SPI dumps and they are not universal BIOS images.
 
+Firmware images published as release assets may contain vendor firmware code. They are provided as-is for research and recovery use and are not relicensed as original project source code.
+
 This project does not provide flashing tools.
 
 No warranty is provided. Use at your own risk.

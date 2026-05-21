@@ -208,6 +208,12 @@ This repository does not include:
 - UEFITool binaries
 - automated flashing scripts
 
+## License Scope
+
+The MIT license applies to the original documentation, scripts, patch profiles, and project files in this repository.
+
+Firmware images published as GitHub Release assets are BIOS-region-only reference artifacts from the tested target. They may contain vendor firmware code and are provided as-is for research and recovery use. They are not universal firmware images and are not relicensed as original project source code.
+
 ## Credits
 
 This work was inspired by the public LGA2011-3/X99 memory timings unlock method documented at:

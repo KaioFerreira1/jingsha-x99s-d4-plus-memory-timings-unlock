@@ -4,6 +4,8 @@ This folder documents the stock BIOS-region-only release asset.
 
 The `.bin` file is intentionally ignored by Git and is published manually as a GitHub Release asset.
 
+The repository MIT license applies to the project documentation, scripts, and patch profiles. This BIOS-region image is a firmware reference artifact from the tested target and may contain vendor firmware code.
+
 ## Release Asset
 
 ```text
