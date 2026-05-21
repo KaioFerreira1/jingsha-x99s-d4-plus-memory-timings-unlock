@@ -32,8 +32,8 @@ GUID: FE612B72-203C-47B1-8560-A66D946EB371
 
 ## Related Files
 
+- [Patch profile](../../patches/JINGSHA-X99S-D4-PLUS-memory-timings.json)
 - [Patch notes](../../patch-notes/JINGSHA-X99S-D4-PLUS-2026-05-21.md)
 - [Method](../../docs/METHOD.md)
 - [Compatibility](../../docs/COMPATIBILITY.md)
 - [Known issues](../../docs/KNOWN-ISSUES.md)
-

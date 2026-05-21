@@ -86,6 +86,12 @@ Platform:
 0x37EA1: 6F -> 6B
 ```
 
+Machine-readable patch profile:
+
+```text
+patches/JINGSHA-X99S-D4-PLUS-memory-timings.json
+```
+
 ## Rebuild Commands
 
 ```powershell
@@ -93,4 +99,3 @@ UEFIReplace.exe .\bios_region_dump.bin ABBCE13D-E25A-4D9F-A1F9-2F7710786892 10 .
 
 UEFIReplace.exe .\bios_step1_platform.bin FE612B72-203C-47B1-8560-A66D946EB371 18 .\fe_memorytimings_mod.bin -o .\bios_region_memory_timings_unlocked.bin
 ```
-

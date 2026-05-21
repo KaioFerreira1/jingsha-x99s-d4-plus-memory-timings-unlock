@@ -1,0 +1,149 @@
+{
+  "name": "JINGSHA X99S-D4-PLUS Memory Timings Unlock",
+  "version": "0.1.0",
+  "date": "2026-05-21",
+  "targetBoard": "JINGSHA X99S-D4-PLUS",
+  "description": "Expose the hidden Memory Timings & Voltage Override form under IntelRCSetup > Memory Configuration.",
+  "modules": {
+    "platform": {
+      "name": "Platform",
+      "guid": "ABBCE13D-E25A-4D9F-A1F9-2F7710786892",
+      "sectionType": "10",
+      "bodyType": "PE32 image section body",
+      "inputFileArgument": "PlatformBody",
+      "outputFile": "pl_memorytimings_mod.bin",
+      "size": 637920,
+      "sha256": "05559A64A4E5BB125C9740AB7C6B49A665201F35CEEA08CC07F62C8EBB69E88B"
+    },
+    "amitseSetupData": {
+      "name": "AMITSESetupData",
+      "guid": "FE612B72-203C-47B1-8560-A66D946EB371",
+      "sectionType": "18",
+      "bodyType": "Freeform subtype GUID section body",
+      "inputFileArgument": "AmitseSetupDataBody",
+      "outputFile": "fe_memorytimings_mod.bin",
+      "size": 489816,
+      "sha256": "E687C9E53CED3779D99BA69B15456AAEC012DB67F1BB470D094796E962284C76"
+    }
+  },
+  "ifr": {
+    "visibleQuestionIds": ["0xC34", "0xC35"],
+    "hiddenFormId": "0x81",
+    "hiddenMenuTitleToken": "69 10",
+    "hiddenMenuHelpToken": "6B 10",
+    "hiddenTargetEntry": "94 00",
+    "visibleAttachReference": "8E 00"
+  },
+  "checks": [
+    {
+      "module": "amitseSetupData",
+      "offset": "0x5A16",
+      "bytes": "81 00 00 00 69 10 94 00 1E 00",
+      "label": "AMITSE target menu entry before parent redirection"
+    },
+    {
+      "module": "amitseSetupData",
+      "offset": "0x4E20E",
+      "bytes": "00 00 34 0C 00 00 00 00 00 00 06 00 8E 00 FF FF",
+      "label": "AMITSE QuestionId 0xC34 navigation record"
+    },
+    {
+      "module": "amitseSetupData",
+      "offset": "0x4E256",
+      "bytes": "00 00 35 0C 00 00 00 00 00 00 06 00 8E 00 FF FF",
+      "label": "AMITSE QuestionId 0xC35 navigation record"
+    },
+    {
+      "module": "platform",
+      "offset": "0x37E12",
+      "bytes": "6E 10 6F 10 34 0C",
+      "label": "Platform visible Memory Frequency 0xC34 prompt/help"
+    },
+    {
+      "module": "platform",
+      "offset": "0x37E9F",
+      "bytes": "6E 10 6F 10 35 0C",
+      "label": "Platform visible Memory Frequency 0xC35 prompt/help"
+    }
+  ],
+  "writes": [
+    {
+      "module": "amitseSetupData",
+      "offset": "0x5A1E",
+      "bytes": "8E 00",
+      "label": "Attach hidden target entry to the visible Memory Configuration group"
+    },
+    {
+      "module": "amitseSetupData",
+      "offset": "0x4E218",
+      "bytes": "01 00",
+      "label": "Patch QuestionId 0xC34 navigation record field"
+    },
+    {
+      "module": "amitseSetupData",
+      "offset": "0x4E21C",
+      "bytes": "94 00",
+      "label": "Patch QuestionId 0xC34 target entry"
+    },
+    {
+      "module": "amitseSetupData",
+      "offset": "0x4E220",
+      "bytes": "01 00 00 00",
+      "label": "Patch QuestionId 0xC34 visibility/navigation flags"
+    },
+    {
+      "module": "amitseSetupData",
+      "offset": "0x4E224",
+      "bytes": "6B 10",
+      "label": "Patch QuestionId 0xC34 help token"
+    },
+    {
+      "module": "amitseSetupData",
+      "offset": "0x4E240",
+      "bytes": "69 10",
+      "label": "Patch QuestionId 0xC34 title token"
+    },
+    {
+      "module": "amitseSetupData",
+      "offset": "0x4E260",
+      "bytes": "01 00",
+      "label": "Patch QuestionId 0xC35 navigation record field"
+    },
+    {
+      "module": "amitseSetupData",
+      "offset": "0x4E264",
+      "bytes": "94 00",
+      "label": "Patch QuestionId 0xC35 target entry"
+    },
+    {
+      "module": "amitseSetupData",
+      "offset": "0x4E268",
+      "bytes": "01 00 00 00",
+      "label": "Patch QuestionId 0xC35 visibility/navigation flags"
+    },
+    {
+      "module": "amitseSetupData",
+      "offset": "0x4E26C",
+      "bytes": "6B 10",
+      "label": "Patch QuestionId 0xC35 help token"
+    },
+    {
+      "module": "amitseSetupData",
+      "offset": "0x4E288",
+      "bytes": "69 10",
+      "label": "Patch QuestionId 0xC35 title token"
+    },
+    {
+      "module": "platform",
+      "offset": "0x37E12",
+      "bytes": "69 10 6B 10",
+      "label": "Rename visible 0xC34 Memory Frequency entry to Memory Timings & Voltage Override"
+    },
+    {
+      "module": "platform",
+      "offset": "0x37E9F",
+      "bytes": "69 10 6B 10",
+      "label": "Rename visible 0xC35 Memory Frequency entry to Memory Timings & Voltage Override"
+    }
+  ]
+}

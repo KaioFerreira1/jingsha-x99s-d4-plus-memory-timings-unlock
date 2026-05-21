@@ -55,7 +55,8 @@ See [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md).
 ## What This Repository Includes
 
 - Documentation of the method and patch targets.
-- A PowerShell patcher for the tested `Platform` and `AMITSESetupData` module bodies.
+- A readable JSON patch profile for the tested `Platform` and `AMITSESetupData` module bodies.
+- A small PowerShell wrapper plus a generic patch executor.
 - Patch notes with offsets, GUIDs, hashes, and validation details.
 - Screenshots showing the unlocked menu on real hardware.
 
@@ -75,6 +76,7 @@ You must use your own firmware dump and your own legally obtained tools.
 ```text
 boards/          Board-specific profile and validation summary
 docs/            Method, compatibility, safety, tools, validation
+patches/         Human-readable JSON patch profile
 patch-notes/     Exact offsets, GUIDs, hashes, and byte changes
 scripts/         Fail-closed patcher
 screenshots/     Real BIOS Setup evidence
@@ -121,6 +123,14 @@ work/patched/patch_report.txt
 ```
 
 The script refuses to patch if the input modules do not match the tested build.
+
+The actual patch data is in:
+
+```text
+patches/JINGSHA-X99S-D4-PLUS-memory-timings.json
+```
+
+Read that file if you want to audit the offsets and replacement bytes without reading PowerShell code.
 
 ## Rebuilding The BIOS Image
 

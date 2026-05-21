@@ -23,6 +23,7 @@ DDR4-2400 confirmed in CPU-Z
 
 ```text
 scripts/Patch-JINGSHA-X99S-D4-PLUS-MemoryTimings.ps1
+patches/JINGSHA-X99S-D4-PLUS-memory-timings.json
 patch-notes/JINGSHA-X99S-D4-PLUS-2026-05-21.md
 docs/METHOD.md
 ```
@@ -46,4 +47,3 @@ Not allowed release assets:
 - AMIBCP binaries.
 - Intel FPT binaries.
 - UEFITool binaries.
-

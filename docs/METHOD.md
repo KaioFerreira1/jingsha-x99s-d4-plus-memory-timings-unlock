@@ -55,6 +55,14 @@ FE612B72-203C-47B1-8560-A66D946EB371
 
 ## Patch Modules
 
+The patch itself is described in a JSON profile:
+
+```text
+patches/JINGSHA-X99S-D4-PLUS-memory-timings.json
+```
+
+That file contains the expected hashes, validation bytes, write offsets, and replacement bytes. The PowerShell script only applies that profile.
+
 Run:
 
 ```powershell
@@ -117,4 +125,3 @@ The submenu should contain:
 - tFAW
 - tRC
 - tCWL
-

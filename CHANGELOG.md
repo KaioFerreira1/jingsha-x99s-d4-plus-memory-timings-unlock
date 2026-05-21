@@ -9,3 +9,4 @@ Initial public documentation draft.
 - Added patch notes with offsets, GUIDs, hashes, and validation results.
 - Added real BIOS Setup screenshots.
 - Added compatibility, known issues, latest patch, and board-profile documentation.
+- Split patch data into a readable JSON profile and kept PowerShell as a small executor.
