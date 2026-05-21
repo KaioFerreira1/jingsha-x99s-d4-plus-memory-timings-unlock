@@ -1,6 +1,6 @@
 # Stock Tested BIOS Region
 
-This folder documents an optional stock BIOS-region-only release asset.
+This folder documents the stock BIOS-region-only release asset.
 
 The `.bin` file is intentionally ignored by Git and is published manually as a GitHub Release asset.
 

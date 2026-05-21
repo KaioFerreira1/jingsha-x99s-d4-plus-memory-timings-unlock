@@ -14,6 +14,10 @@ You are responsible for:
 - Having a recovery method available.
 - Understanding what you are flashing before you flash it.
 
-This repository does not provide ready-to-flash BIOS images and does not provide flashing tools.
+The Git tree does not contain firmware images.
+
+GitHub Releases provide experimental BIOS-region-only images for the exact tested target. They are not full SPI dumps and they are not universal BIOS images.
+
+This project does not provide flashing tools.
 
 No warranty is provided. Use at your own risk.
