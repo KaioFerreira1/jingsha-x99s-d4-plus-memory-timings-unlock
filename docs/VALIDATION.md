@@ -53,6 +53,22 @@ Recommended proof screenshots:
 
 Image publishing notes are in [IMAGE-GUIDELINES.md](IMAGE-GUIDELINES.md).
 
+## Evidence Preview
+
+| AMIBCP validation | AMIBCP Memory Configuration tree |
+| --- | --- |
+| <img src="../screenshots/amibcp-intelrcsetup-memory-timings-visible.jpg" alt="AMIBCP IntelRCSetup Memory Timings visible" width="420"> | <img src="../screenshots/amibcp-memory-configuration-tree.png" alt="AMIBCP Memory Configuration tree" width="420"> |
+
+| AMIBCP menu entry | CPU-Z board identification |
+| --- | --- |
+| <img src="../screenshots/amibcp-memory-timings-visible-yes.png" alt="AMIBCP Memory Timings Show Yes" width="420"> | <img src="../screenshots/cpu-z-mainboard-q87-bios-5-11.png" alt="CPU-Z Mainboard Q87 BIOS 5.11" width="420"> |
+
+| Real BIOS Setup | Unlocked timing controls |
+| --- | --- |
+| <img src="../screenshots/real-bios-memory-configuration.jpg" alt="Real BIOS Memory Configuration unlocked" width="420"> | <img src="../screenshots/real-bios-memory-timings-menu.jpg" alt="Real BIOS Memory Timings menu" width="420"> |
+
+<img src="../screenshots/cpu-z-ddr4-2400-cl13-and-bench-experimental.png" alt="CPU-Z DDR4-2400 CL13 experimental and bench" width="840">
+
 ## Recommended Stability Tests
 
 Before tightening timings further:
