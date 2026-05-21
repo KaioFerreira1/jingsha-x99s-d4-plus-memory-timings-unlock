@@ -164,6 +164,8 @@ Screenshots:
 - [real-bios-memory-configuration.jpg](screenshots/real-bios-memory-configuration.jpg)
 - [real-bios-memory-timings-menu.jpg](screenshots/real-bios-memory-timings-menu.jpg)
 
+For adding board photos, CPU-Z timing screenshots, or stability proof, see [docs/IMAGE-GUIDELINES.md](docs/IMAGE-GUIDELINES.md) and [docs/VALIDATION.md](docs/VALIDATION.md).
+
 ## Repository Layout
 
 ```text

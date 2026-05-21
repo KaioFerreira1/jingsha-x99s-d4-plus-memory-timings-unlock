@@ -1,0 +1,72 @@
+# Image Guidelines
+
+Images are useful for validation, but keep them clean, relevant, and safe to publish.
+
+## Recommended Images
+
+Good images for this repository:
+
+- real BIOS Setup screenshots showing the unlocked menu
+- AMIBCP screenshots showing the modified menu tree
+- CPU-Z Memory tab screenshots showing applied memory frequency and timings
+- memory stability test screenshots
+- your own photo of the tested motherboard
+- your own photo of the board model marking, if serial numbers are hidden
+
+## Images To Avoid
+
+Do not commit:
+
+- seller listing images unless you have permission or a clear license
+- product/catalog photos copied from marketplaces
+- screenshots exposing serial numbers, UUIDs, MAC addresses, or full firmware dumps
+- images containing private account names, addresses, chats, order numbers, or tracking data
+- screenshots of proprietary tool downloads or license-restricted binaries
+
+If a board photo has a serial sticker or QR code, crop or blur that part before publishing.
+
+## Timing Proof Screenshots
+
+For memory timing validation, the best evidence is:
+
+```text
+CPU-Z > Memory
+```
+
+Useful fields:
+
+- DRAM Frequency
+- Channel #
+- CAS# Latency
+- RAS# to CAS# Delay
+- RAS# Precharge
+- Cycle Time
+- Row Refresh Cycle Time
+- Command Rate
+
+If showing the memory module itself, prefer `CPU-Z > SPD` only if serial numbers are hidden.
+
+## Suggested Filenames
+
+Use descriptive lowercase names:
+
+```text
+screenshots/cpu-z-ddr4-2400-cl17.jpg
+screenshots/cpu-z-ddr4-2400-cl13-experimental.jpg
+screenshots/memtest-ddr4-2400-cl13.jpg
+screenshots/real-board-jingsha-x99s-d4-plus.jpg
+```
+
+Use `experimental` in the filename when the setting has not passed long stability testing yet.
+
+## Metadata
+
+Before publishing photos taken with a phone, remove EXIF metadata.
+
+At minimum, remove:
+
+- GPS location
+- camera serial data
+- timestamp metadata, if privacy matters
+
+Screenshots usually contain less metadata than phone photos, but they should still be checked before release.

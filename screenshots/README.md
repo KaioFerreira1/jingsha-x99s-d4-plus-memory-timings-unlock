@@ -2,6 +2,8 @@
 
 These screenshots show validation on the tested physical JINGSHA X99S-D4-PLUS board.
 
+See [../docs/IMAGE-GUIDELINES.md](../docs/IMAGE-GUIDELINES.md) before adding more images.
+
 ## Files
 
 ```text
@@ -24,3 +26,4 @@ Shows the opened `Memory Timings & Voltage Override` submenu with `DIMM profile`
 
 Screenshots are evidence only. They are not firmware data and do not contain BIOS dumps.
 
+Use only your own screenshots or your own board photos. Avoid committing marketplace/catalog product photos unless permission or a clear license exists.

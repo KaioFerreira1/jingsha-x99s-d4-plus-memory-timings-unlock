@@ -188,4 +188,5 @@ tCWL
 10. docs/FLASHING-SAFETY.md
 11. docs/FAQ.md
 12. docs/PORTING-GUIDE.md
+13. docs/IMAGE-GUIDELINES.md
 ```
