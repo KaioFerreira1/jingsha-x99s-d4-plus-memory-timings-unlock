@@ -8,6 +8,7 @@ Good images for this repository:
 
 - real BIOS Setup screenshots showing the unlocked menu
 - AMIBCP screenshots showing the modified menu tree
+- CPU-Z Mainboard tab screenshots showing board model, chipset/southbridge, BIOS version, and BIOS date
 - CPU-Z Memory tab screenshots showing applied memory frequency and timings
 - memory stability test screenshots
 - your own photo of the tested motherboard

@@ -24,6 +24,8 @@ IntelRCSetup > Memory Configuration > Memory Timings & Voltage Override
 | --- | --- |
 | Board | JINGSHA X99S-D4-PLUS |
 | Firmware/PCH reported by FPT | Intel Q87 Express / 8 Series-C220 |
+| CPU-Z Southbridge | Intel Q87 Rev. C2 |
+| CPU-Z BIOS | American Megatrends Inc. 5.11, date 09/06/2023 |
 | BIOS UI | AMI Aptio Setup Utility 2023 |
 | Flash chip | Winbond W25Q128BV |
 | Full SPI size | 16 MB |

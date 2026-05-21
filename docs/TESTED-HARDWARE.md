@@ -7,6 +7,21 @@ JINGSHA X99S-D4-PLUS
 AMI Aptio Setup Utility
 ```
 
+CPU-Z Mainboard tab on the tested system reported:
+
+```text
+Manufacturer: JINGSHA
+Model:        X99S D4 PLUS
+Bus Specs:    PCI-Express 3.0 (8.0 GT/s)
+Chipset:      Intel Broadwell-E Rev. 01
+Southbridge:  Intel Q87 Rev. C2
+LPCIO:        Nuvoton NCT6779
+BIOS Brand:   American Megatrends Inc.
+BIOS Version: 5.11
+BIOS Date:    09/06/2023
+Microcode:    0xB000038
+```
+
 ## Firmware/PCH Identification
 
 Intel FPT reported the tested dump as:

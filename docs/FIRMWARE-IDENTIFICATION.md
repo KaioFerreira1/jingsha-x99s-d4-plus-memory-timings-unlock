@@ -14,6 +14,23 @@ Intel Q87 Express / 8 Series-C220
 
 This is important because some Chinese "X99" boards do not identify exactly like retail Intel X99/C612 platforms in firmware tools.
 
+## CPU-Z Mainboard Evidence
+
+CPU-Z also identified the tested system with these values:
+
+```text
+Manufacturer: JINGSHA
+Model:        X99S D4 PLUS
+Chipset:      Intel Broadwell-E Rev. 01
+Southbridge:  Intel Q87 Rev. C2
+LPCIO:        Nuvoton NCT6779
+BIOS Brand:   American Megatrends Inc.
+BIOS Version: 5.11
+BIOS Date:    09/06/2023
+```
+
+The BIOS date is recorded exactly as CPU-Z displayed it.
+
 ## Tested Dump Details
 
 ```text
@@ -48,4 +65,3 @@ E687C9E53CED3779D99BA69B15456AAEC012DB67F1BB470D094796E962284C76
 ```
 
 If your board is sold as JINGSHA X99S-D4-PLUS but reports a different firmware platform or has different module hashes, treat it as a different target until manually reviewed.
-

@@ -46,6 +46,7 @@ This tighter profile should be treated as experimental until long memory stabili
 
 Recommended proof screenshots:
 
+- CPU-Z Mainboard tab showing board model, Q87 southbridge, and BIOS version
 - CPU-Z Memory tab after applying the settings
 - BIOS timing menu showing the selected values
 - memory stability test result after the timing change
