@@ -2,7 +2,7 @@
 
 This folder documents the first experimental BIOS mod release.
 
-The `.bin` file is intentionally ignored by Git and should be uploaded manually as a GitHub Release asset.
+The `.bin` file is intentionally ignored by Git and is published manually as a GitHub Release asset.
 
 ## Release Asset
 
@@ -50,4 +50,3 @@ Do not flash if your board or firmware identification differs.
 External SPI programmer strongly recommended.
 Use at your own risk.
 ```
-

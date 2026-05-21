@@ -12,7 +12,7 @@ The patcher remains the recommended path for verification and future BIOS varian
 
 ## What Can Be Published In Releases
 
-GitHub Releases may include BIOS-region-only images for the exact tested target:
+GitHub Releases include BIOS-region-only images for the exact tested target:
 
 - experimental memory timings unlock BIOS region
 - stock tested BIOS region reference

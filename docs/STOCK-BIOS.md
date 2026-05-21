@@ -1,6 +1,6 @@
 # Stock BIOS Reference
 
-This project can also provide a stock BIOS-region-only reference image through GitHub Releases.
+This project also provides a stock BIOS-region-only reference image through GitHub Releases.
 
 The goal is to help users who cannot find an original JINGSHA X99S-D4-PLUS BIOS online.
 
@@ -30,7 +30,7 @@ Flash descriptor region
 
 ## Stock Reference Asset
 
-Recommended release filename:
+Published release filename:
 
 ```text
 JINGSHA-X99S-D4-PLUS_Q87-C220_STOCK-TESTED_BIOS-REGION-ONLY.bin
@@ -77,4 +77,3 @@ Keep your own full SPI backup.
 External SPI programmer strongly recommended.
 Use at your own risk.
 ```
-

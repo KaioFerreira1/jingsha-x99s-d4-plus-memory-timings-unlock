@@ -4,7 +4,7 @@
 
 The Git tree does not include BIOS images.
 
-This project may provide an experimental BIOS-region-only image through GitHub Releases. That file is only for the exact tested target and must be verified before use.
+This project provides an experimental BIOS-region-only image through GitHub Releases. That file is only for the exact tested target and must be verified before use.
 
 The safer path is still to use the patcher with your own extracted module bodies.
 

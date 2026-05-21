@@ -20,7 +20,7 @@ After the unlock, the tested board was able to select DDR4-2400 from BIOS Setup.
 
 ## What This Mod Does Not Do
 
-This project may provide an experimental BIOS-region-only file through GitHub Releases.
+This project provides an experimental BIOS-region-only file through GitHub Releases.
 
 You can either use the release asset or generate the same modification from your own dump.
 

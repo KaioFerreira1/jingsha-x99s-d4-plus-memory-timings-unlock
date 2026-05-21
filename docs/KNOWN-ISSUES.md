@@ -36,4 +36,4 @@ A failed memory setting can usually be recovered with CMOS reset. A bad flash ma
 
 This repository does not provide a universal ready-to-flash ROM.
 
-If a BIOS-region-only release asset is published, it is experimental and only for the exact tested target. Users can also generate their own modified image from their own firmware dump.
+The published BIOS-region-only release asset is experimental and only for the exact tested target. Users can also generate their own modified image from their own firmware dump.

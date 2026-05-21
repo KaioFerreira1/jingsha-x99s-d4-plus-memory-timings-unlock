@@ -2,7 +2,7 @@
 
 This folder documents an optional stock BIOS-region-only release asset.
 
-The `.bin` file is intentionally ignored by Git and should be uploaded manually as a GitHub Release asset if published.
+The `.bin` file is intentionally ignored by Git and is published manually as a GitHub Release asset.
 
 ## Release Asset
 
@@ -37,4 +37,3 @@ Keep your own full SPI backup.
 External SPI programmer strongly recommended.
 Use at your own risk.
 ```
-

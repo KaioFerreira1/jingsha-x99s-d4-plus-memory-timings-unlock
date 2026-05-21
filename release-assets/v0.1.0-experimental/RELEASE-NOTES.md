@@ -7,9 +7,9 @@ JINGSHA X99S-D4-PLUS
 FPT reported platform: Intel Q87 Express / 8 Series-C220
 ```
 
-## Download
+## Published Asset
 
-Upload this file to the GitHub Release:
+This file is published as a GitHub Release asset:
 
 ```text
 JINGSHA-X99S-D4-PLUS_Q87-C220_MEMORY-TIMINGS-UNLOCK_v0.1.0-experimental_BIOS-REGION-ONLY.bin
@@ -76,4 +76,3 @@ Keep your own full SPI backup.
 External SPI programmer strongly recommended.
 Use at your own risk.
 ```
-

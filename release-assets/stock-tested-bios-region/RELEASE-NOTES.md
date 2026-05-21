@@ -2,9 +2,9 @@
 
 Stock BIOS-region-only reference from the tested board.
 
-## Download
+## Published Asset
 
-Upload this file to a GitHub Release:
+This file is published as a GitHub Release asset:
 
 ```text
 JINGSHA-X99S-D4-PLUS_Q87-C220_STOCK-TESTED_BIOS-REGION-ONLY.bin
@@ -38,4 +38,3 @@ Keep your own full SPI backup.
 External SPI programmer strongly recommended.
 Use at your own risk.
 ```
-

@@ -40,7 +40,11 @@ External board reference: [The Retro Web - JINGSHA X99S-D4-PLUS](https://theretr
 
 ## Downloads
 
-Firmware binaries are not committed to Git. If published, they are attached manually to GitHub Releases.
+Firmware binaries are not committed to Git. Published BIOS-region-only images are attached manually to GitHub Releases.
+
+Published release:
+
+- https://github.com/KaioFerreira1/jingsha-x99s-d4-plus-memory-timings-unlock/releases/tag/MEMORY-TIMINGS-UNLOCK-v0.1.0-experimental
 
 If you only want to inspect or use the published BIOS-region image, the scripts are not required. They are kept so the project is auditable: reviewers can see the exact bytes changed, verify the source module hashes, and reproduce the same mod from a matching stock dump instead of blindly trusting a binary file.
 

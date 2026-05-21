@@ -14,3 +14,5 @@ Initial public documentation draft.
 - Documented that the tested firmware was reported by FPT as Intel Q87 Express / 8 Series-C220.
 - Reframed the project to support an experimental BIOS-region-only release asset.
 - Added stock tested BIOS-region-only release documentation.
+- Published GitHub Release assets for the modified and stock tested BIOS regions.
+- Embedded validation screenshots across README, board profile, and validation documentation.
