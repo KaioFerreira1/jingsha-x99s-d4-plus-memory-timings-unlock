@@ -2,6 +2,16 @@
 
 Unlocks the hidden **Memory Timings & Voltage Override** menu in the AMI Aptio BIOS used by the JINGSHA X99S-D4-PLUS motherboard.
 
+## Attention
+
+This project is for the **JINGSHA X99S-D4-PLUS** BIOS variant tested here.
+
+- Do not use this as a generic X99 BIOS mod.
+- Do not flash anything before validating the generated image in AMIBCP.
+- Do not publish or share full SPI dumps from your own board.
+- Keep a full SPI backup and have an external programmer available.
+- The repository provides a patcher and documentation, not a ready-to-flash BIOS image.
+
 This project documents a tested BIOS Setup mod for exposing:
 
 ```text
@@ -22,6 +32,26 @@ Tested on one physical board:
 
 This is not a universal BIOS image. The script is intentionally fail-closed and only patches module bodies that match the known tested build.
 
+## Features
+
+- Unlocks the hidden memory timings menu.
+- Keeps the process reproducible from the user's own dump.
+- Validates exact module sizes and SHA256 hashes before patching.
+- Documents GUIDs, offsets, QuestionIds, and output hashes.
+- Includes real BIOS Setup evidence from the tested board.
+
+This project does not update microcodes, Intel ME, ReBar, GOP, VROC, logos, or other firmware components.
+
+## Compatibility
+
+| Board | Status | Notes |
+| --- | --- | --- |
+| JINGSHA X99S-D4-PLUS | Tested working | Menu unlocked and DDR4-2400 confirmed |
+| Other JINGSHA X99 variants | Untested | Do not assume compatible |
+| MACHINIST/KLLISRE/HUANANZHI X99 variants | Untested | Similar methods may apply, but offsets can differ |
+
+See [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md).
+
 ## What This Repository Includes
 
 - Documentation of the method and patch targets.
@@ -39,6 +69,16 @@ This is not a universal BIOS image. The script is intentionally fail-closed and 
 - No automated flashing script.
 
 You must use your own firmware dump and your own legally obtained tools.
+
+## Repository Layout
+
+```text
+boards/          Board-specific profile and validation summary
+docs/            Method, compatibility, safety, tools, validation
+patch-notes/     Exact offsets, GUIDs, hashes, and byte changes
+scripts/         Fail-closed patcher
+screenshots/     Real BIOS Setup evidence
+```
 
 ## High-Level Method
 
@@ -103,6 +143,7 @@ IntelRCSetup > Memory Configuration
 Firmware modification can brick your motherboard. Do not flash anything unless you understand recovery procedures and have a full SPI backup. An external programmer is strongly recommended.
 
 Read [DISCLAIMER.md](DISCLAIMER.md) and [docs/FLASHING-SAFETY.md](docs/FLASHING-SAFETY.md) before using this project.
+Read [docs/KNOWN-ISSUES.md](docs/KNOWN-ISSUES.md) before changing memory settings.
 
 ## Evidence
 

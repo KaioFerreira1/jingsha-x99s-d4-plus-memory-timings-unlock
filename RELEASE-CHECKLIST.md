@@ -12,4 +12,5 @@ Use this checklist before publishing or tagging a release.
 - [ ] README warns that the project does not provide ready-to-flash images.
 - [ ] Screenshots do not expose private serial numbers or unique firmware data.
 - [ ] Flashing safety notes are present.
-
+- [ ] Release assets do not include firmware images.
+- [ ] Compatibility notes mention exact module hashes.
