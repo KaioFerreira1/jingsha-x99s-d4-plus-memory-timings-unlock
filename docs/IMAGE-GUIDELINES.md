@@ -19,6 +19,7 @@ Do not commit:
 
 - seller listing images unless you have permission or a clear license
 - product/catalog photos copied from marketplaces
+- board photos copied from external databases unless the specific image has a clear reusable license
 - screenshots exposing serial numbers, UUIDs, MAC addresses, or full firmware dumps
 - images containing private account names, addresses, chats, order numbers, or tracking data
 - screenshots of proprietary tool downloads or license-restricted binaries
@@ -70,3 +71,17 @@ At minimum, remove:
 - timestamp metadata, if privacy matters
 
 Screenshots usually contain less metadata than phone photos, but they should still be checked before release.
+
+## External Board Databases
+
+It is fine to link to external board pages as references.
+
+Example:
+
+```text
+https://theretroweb.com/motherboards/s/jingsha-x99s-d4-plus
+```
+
+Do not commit a copied board image from an external page unless the page shows a license that allows redistribution, or you have explicit permission.
+
+If you use an externally licensed image, document the source URL, author or creditor, and license next to the image.

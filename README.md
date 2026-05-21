@@ -34,6 +34,8 @@ IntelRCSetup > Memory Configuration > Memory Timings & Voltage Override
 
 See [docs/FIRMWARE-IDENTIFICATION.md](docs/FIRMWARE-IDENTIFICATION.md) for the Q87 / 8 Series-C220 note.
 
+External board reference: [The Retro Web - JINGSHA X99S-D4-PLUS](https://theretroweb.com/motherboards/s/jingsha-x99s-d4-plus).
+
 ## Downloads
 
 Firmware binaries are not committed to Git. If published, they are attached manually to GitHub Releases.
