@@ -1,0 +1,36 @@
+# Firmware dumps and generated images
+*.bin
+*.rom
+*.cap
+*.fd
+*.bio
+*.bak
+*.dump
+
+# Proprietary or third-party binaries/tools
+*.exe
+*.dll
+*.zip
+*.7z
+*.rar
+
+# Work folders
+work/
+out/
+patched/
+modified/
+logs/
+tools/
+downloads/
+
+# UEFITool extraction output
+*.report.txt
+*.guids.csv
+*.dump/
+
+# OS/editor noise
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
+
