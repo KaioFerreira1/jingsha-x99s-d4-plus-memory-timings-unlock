@@ -55,9 +55,11 @@ Image publishing notes are in [IMAGE-GUIDELINES.md](IMAGE-GUIDELINES.md).
 
 ## Evidence Preview
 
-| AMIBCP validation | AMIBCP Memory Configuration tree |
+The first AMIBCP image documents the original menu-placement issue. The following images document the patched tree and real hardware validation.
+
+| Original AMIBCP issue | Patched AMIBCP tree |
 | --- | --- |
-| <img src="../screenshots/amibcp-intelrcsetup-memory-timings-visible.jpg" alt="AMIBCP IntelRCSetup Memory Timings visible" width="420"> | <img src="../screenshots/amibcp-memory-configuration-tree.png" alt="AMIBCP Memory Configuration tree" width="420"> |
+| <img src="../screenshots/amibcp-before-memory-timings-outside-memory-configuration.jpg" alt="Original AMIBCP issue: Memory Timings outside Memory Configuration" width="420"> | <img src="../screenshots/amibcp-memory-configuration-tree.png" alt="Patched AMIBCP Memory Configuration tree" width="420"> |
 
 | AMIBCP menu entry | CPU-Z board identification |
 | --- | --- |

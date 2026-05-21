@@ -28,9 +28,9 @@ GUID: FE612B72-203C-47B1-8560-A66D946EB371
 
 ## Validation Evidence
 
-| AMIBCP validation | AMIBCP Memory Configuration tree |
+| Original AMIBCP issue | Patched AMIBCP tree |
 | --- | --- |
-| <img src="../../screenshots/amibcp-intelrcsetup-memory-timings-visible.jpg" alt="AMIBCP IntelRCSetup Memory Timings visible" width="420"> | <img src="../../screenshots/amibcp-memory-configuration-tree.png" alt="AMIBCP Memory Configuration tree" width="420"> |
+| <img src="../../screenshots/amibcp-before-memory-timings-outside-memory-configuration.jpg" alt="Original AMIBCP issue: Memory Timings outside Memory Configuration" width="420"> | <img src="../../screenshots/amibcp-memory-configuration-tree.png" alt="Patched AMIBCP Memory Configuration tree" width="420"> |
 
 | AMIBCP menu entry | CPU-Z board identification |
 | --- | --- |

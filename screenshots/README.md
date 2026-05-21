@@ -7,16 +7,16 @@ See [../docs/IMAGE-GUIDELINES.md](../docs/IMAGE-GUIDELINES.md) before adding mor
 ## Files
 
 ```text
-amibcp-intelrcsetup-memory-timings-visible.jpg
+amibcp-before-memory-timings-outside-memory-configuration.jpg
 ```
 
-Shows AMIBCP with `IntelRCSetup`, `Memory Configuration`, and the unlocked `Memory Timings & Voltage Override` entry visible in the Setup tree.
+Shows the original AMIBCP issue: `Memory Configuration` is visible, but `Memory Timings & Voltage Override` appears outside that submenu. This is the problem this BIOS mod fixes.
 
 ```text
 amibcp-memory-configuration-tree.png
 ```
 
-Shows the AMIBCP tree under `IntelRCSetup > Memory Configuration`.
+Shows the patched AMIBCP tree under `IntelRCSetup > Memory Configuration`.
 
 ```text
 amibcp-memory-timings-visible-yes.png
@@ -60,9 +60,9 @@ Use only your own screenshots or your own board photos. Avoid committing marketp
 
 ## Preview
 
-| AMIBCP validation | AMIBCP Memory Configuration tree |
+| Original AMIBCP issue | Patched AMIBCP tree |
 | --- | --- |
-| <img src="amibcp-intelrcsetup-memory-timings-visible.jpg" alt="AMIBCP IntelRCSetup Memory Timings visible" width="420"> | <img src="amibcp-memory-configuration-tree.png" alt="AMIBCP Memory Configuration tree" width="420"> |
+| <img src="amibcp-before-memory-timings-outside-memory-configuration.jpg" alt="Original AMIBCP issue: Memory Timings outside Memory Configuration" width="420"> | <img src="amibcp-memory-configuration-tree.png" alt="Patched AMIBCP Memory Configuration tree" width="420"> |
 
 | AMIBCP menu entry | CPU-Z board identification |
 | --- | --- |
