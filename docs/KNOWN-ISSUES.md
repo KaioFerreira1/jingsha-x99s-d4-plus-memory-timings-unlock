@@ -34,5 +34,6 @@ A failed memory setting can usually be recovered with CMOS reset. A bad flash ma
 
 ## No Universal BIOS Image
 
-This repository intentionally does not provide a universal ready-to-flash ROM. Users must generate their own modified image from their own firmware dump.
+This repository does not provide a universal ready-to-flash ROM.
 
+If a BIOS-region-only release asset is published, it is experimental and only for the exact tested target. Users can also generate their own modified image from their own firmware dump.

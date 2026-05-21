@@ -23,15 +23,29 @@ DDR4-2400 confirmed in CPU-Z
 ## Use These Files
 
 ```text
+release-assets/v0.1.0-experimental/RELEASE-NOTES.md
+release-assets/v0.1.0-experimental/SHA256SUMS.txt
 scripts/Patch-JINGSHA-X99S-D4-PLUS-MemoryTimings.ps1
 patches/JINGSHA-X99S-D4-PLUS-memory-timings.json
 patch-notes/JINGSHA-X99S-D4-PLUS-2026-05-21.md
 docs/METHOD.md
 ```
 
-## Release Policy
+## Release Asset
 
-GitHub releases for this project should not include BIOS images.
+Experimental BIOS region release asset:
+
+```text
+JINGSHA-X99S-D4-PLUS_Q87-C220_MEMORY-TIMINGS-UNLOCK_v0.1.0-experimental_BIOS-REGION-ONLY.bin
+```
+
+SHA256:
+
+```text
+E886AC2F4EE250B2DFDC103948C819D74125B16910E6EBEDDBC4F4CEE9FAF901
+```
+
+## Release Policy
 
 Allowed release assets:
 
@@ -39,12 +53,12 @@ Allowed release assets:
 - Documentation.
 - Scripts.
 - Checksums for module bodies.
+- Experimental BIOS-region-only image for the exact tested target.
 
 Not allowed release assets:
 
 - Full SPI dumps.
-- BIOS region dumps.
-- Modified BIOS images.
+- BIOS images for unverified boards.
 - AMIBCP binaries.
 - Intel FPT binaries.
 - UEFITool binaries.

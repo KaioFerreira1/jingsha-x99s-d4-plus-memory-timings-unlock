@@ -12,3 +12,4 @@ Initial public documentation draft.
 - Split patch data into a readable JSON profile and kept PowerShell as a small executor.
 - Added START-HERE, FAQ, and glossary pages for first-time readers.
 - Documented that the tested firmware was reported by FPT as Intel Q87 Express / 8 Series-C220.
+- Reframed the project to support an experimental BIOS-region-only release asset.

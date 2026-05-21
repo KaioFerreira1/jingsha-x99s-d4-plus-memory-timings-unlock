@@ -2,19 +2,27 @@
 
 ## Can I flash a BIOS file from this repository?
 
-No. This repository does not include BIOS images.
+The Git tree does not include BIOS images.
 
-It only provides documentation and a patcher that works with your own extracted module bodies.
+This project may provide an experimental BIOS-region-only image through GitHub Releases. That file is only for the exact tested target and must be verified before use.
 
-## Why not publish a ready-to-flash BIOS?
+The safer path is still to use the patcher with your own extracted module bodies.
 
-Because firmware images can contain board-specific data and can brick incompatible boards.
+## Why not commit the BIOS file directly to the repository?
 
-This project is safer as a reproducible patch method:
+Because firmware images are binary release artifacts, not source files. Keeping them in Git makes the repository harder to audit and easier to misuse.
+
+The repository keeps documentation, patch profiles, hashes, and scripts in Git. The optional BIOS region mod belongs in GitHub Releases with warnings and checksums.
+
+## Why keep the patcher if a BIOS region release exists?
+
+Because the patcher is the reproducible method:
 
 ```text
 your dump -> extracted modules -> patcher -> your modified image
 ```
+
+It also lets users verify whether their BIOS matches the tested build before trusting a release binary.
 
 ## My board is also X99. Will this work?
 
@@ -72,4 +80,3 @@ docs/TOOLS.md
 In this mod, `Platform` contains the IFR forms and text references. `AMITSESetupData` controls how those forms are exposed in the visible Setup tree.
 
 Both need to be patched for the menu to appear and open correctly.
-

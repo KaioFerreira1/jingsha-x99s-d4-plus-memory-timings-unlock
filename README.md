@@ -12,9 +12,9 @@ This project is for the **JINGSHA X99S-D4-PLUS** BIOS variant tested here.
 - Do not flash anything before validating the generated image in AMIBCP.
 - Do not publish or share full SPI dumps from your own board.
 - Keep a full SPI backup and have an external programmer available.
-- The repository provides a patcher and documentation, not a ready-to-flash BIOS image.
+- BIOS mod binaries, when provided, are experimental BIOS-region-only release assets.
 
-This project documents a tested BIOS Setup mod for exposing:
+This project provides an experimental BIOS mod and documents a reproducible BIOS Setup patch for exposing:
 
 ```text
 IntelRCSetup > Memory Configuration > Memory Timings & Voltage Override
@@ -33,11 +33,12 @@ Tested on one physical board:
 - Memory: 2x8 GB DDR4 Hynix 2133
 - Confirmed result: DDR4 running at 2400 MT/s after unlock
 
-This is not a universal BIOS image. The script is intentionally fail-closed and only patches module bodies that match the known tested build.
+This is not a universal BIOS image. The release BIOS region and the patcher target only the known tested build.
 
 ## Features
 
 - Unlocks the hidden memory timings menu.
+- Provides an experimental BIOS-region-only mod through GitHub Releases.
 - Keeps the process reproducible from the user's own dump.
 - Validates exact module sizes and SHA256 hashes before patching.
 - Documents GUIDs, offsets, QuestionIds, and output hashes.
@@ -58,6 +59,7 @@ See [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md).
 ## What This Repository Includes
 
 - Documentation of the method and patch targets.
+- Release notes and hashes for the experimental BIOS region mod.
 - A readable JSON patch profile for the tested `Platform` and `AMITSESetupData` module bodies.
 - A small PowerShell wrapper plus a generic patch executor.
 - Patch notes with offsets, GUIDs, hashes, and validation details.
@@ -65,14 +67,14 @@ See [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md).
 
 ## What This Repository Does Not Include
 
-- No BIOS dumps.
-- No ready-to-flash firmware images.
+- No full SPI dumps.
+- No firmware binaries committed into the Git tree.
 - No AMIBCP binaries.
 - No Intel FPT / Intel ME System Tools binaries.
 - No UEFITool binaries.
 - No automated flashing script.
 
-You must use your own firmware dump and your own legally obtained tools.
+BIOS mod binaries, if published, belong in GitHub Releases as explicit experimental assets. You still need your own backup and legally obtained tools.
 
 ## Repository Layout
 
@@ -83,9 +85,34 @@ patches/         Human-readable JSON patch profile
 patch-notes/     Exact offsets, GUIDs, hashes, and byte changes
 scripts/         Fail-closed patcher
 screenshots/     Real BIOS Setup evidence
+release-assets/  Release notes, hashes, and upload checklist
 ```
 
-## High-Level Method
+## Downloading The BIOS Mod
+
+The experimental BIOS mod should be published as a GitHub Release asset, not committed directly to the repository.
+
+Expected release asset:
+
+```text
+JINGSHA-X99S-D4-PLUS_Q87-C220_MEMORY-TIMINGS-UNLOCK_v0.1.0-experimental_BIOS-REGION-ONLY.bin
+```
+
+SHA256:
+
+```text
+E886AC2F4EE250B2DFDC103948C819D74125B16910E6EBEDDBC4F4CEE9FAF901
+```
+
+Release notes are in:
+
+```text
+release-assets/v0.1.0-experimental/RELEASE-NOTES.md
+```
+
+Read [docs/BIOS-MOD-RELEASE.md](docs/BIOS-MOD-RELEASE.md) before publishing or flashing a release binary.
+
+## Reproducible Patch Method
 
 1. Dump your own BIOS.
 2. Open the dump in AMIBCP and confirm the hidden menu exists.
@@ -101,7 +128,7 @@ See [docs/DUMPING.md](docs/DUMPING.md) for backup and privacy notes.
 See [docs/FIRMWARE-IDENTIFICATION.md](docs/FIRMWARE-IDENTIFICATION.md) for the Q87 / 8 Series-C220 detection note.
 See [docs/GLOSSARY.md](docs/GLOSSARY.md) if the firmware terms are unfamiliar.
 
-## Quick Start
+## Patcher Quick Start
 
 Create a working folder and place the extracted bodies there:
 

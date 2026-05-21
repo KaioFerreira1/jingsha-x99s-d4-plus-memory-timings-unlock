@@ -20,9 +20,9 @@ After the unlock, the tested board was able to select DDR4-2400 from BIOS Setup.
 
 ## What This Mod Does Not Do
 
-This project does not provide a BIOS file to flash.
+This project may provide an experimental BIOS-region-only file through GitHub Releases.
 
-You must generate your own modified BIOS from your own dump.
+You can either use the release asset or generate the same modification from your own dump.
 
 It also does not add:
 
@@ -47,10 +47,33 @@ Do not use this if:
 
 - Your board is a different X99 model.
 - Your hashes do not match and you cannot manually audit the patch.
-- You want a ready-to-flash ROM.
+- You want a universal no-checks ROM for any X99 board.
 - You do not have a backup or recovery method.
 
-## Basic Workflow
+## Option A: Use The Experimental Release
+
+```text
+1. Download the BIOS-region-only file from GitHub Releases
+2. Verify its SHA256 hash
+3. Open it in AMIBCP
+4. Confirm the unlocked menu exists
+5. Make sure your board/firmware identification matches
+6. Only then decide whether flashing is worth the risk
+```
+
+Expected release file:
+
+```text
+JINGSHA-X99S-D4-PLUS_Q87-C220_MEMORY-TIMINGS-UNLOCK_v0.1.0-experimental_BIOS-REGION-ONLY.bin
+```
+
+Expected SHA256:
+
+```text
+E886AC2F4EE250B2DFDC103948C819D74125B16910E6EBEDDBC4F4CEE9FAF901
+```
+
+## Option B: Rebuild The Mod Yourself
 
 ```text
 1. Dump your own BIOS
@@ -59,10 +82,9 @@ Do not use this if:
 4. Run the patcher
 5. Replace the patched bodies into a copy of your BIOS region
 6. Open the modified image in AMIBCP
-7. Only then decide whether flashing is worth the risk
 ```
 
-## Files You Need To Extract
+## Files You Need To Extract For Option B
 
 From your BIOS region image:
 
@@ -130,7 +152,8 @@ tCWL
 3. docs/COMPATIBILITY.md
 4. docs/METHOD.md
 5. docs/FIRMWARE-IDENTIFICATION.md
-6. patches/JINGSHA-X99S-D4-PLUS-memory-timings.json
-7. docs/FLASHING-SAFETY.md
-8. docs/FAQ.md
+6. docs/BIOS-MOD-RELEASE.md
+7. patches/JINGSHA-X99S-D4-PLUS-memory-timings.json
+8. docs/FLASHING-SAFETY.md
+9. docs/FAQ.md
 ```
